@@ -1,0 +1,5 @@
+1.xpath
+2.coding reverse finding sbstring finding character
+3.cucmber bb
+4.rest api
+5.how to use selenium
