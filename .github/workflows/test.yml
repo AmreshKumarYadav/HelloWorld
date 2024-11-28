@@ -1,0 +1,20 @@
+name: Push Message Workflow (Windows)
+
+# Trigger on every push to the repository
+on:
+  push:
+    branches:
+      - '*'  # Trigger on all branches. Modify if needed.
+
+jobs:
+  show-message:
+    runs-on: windows-latest  # Use a Windows runner
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Display a custom message in the Actions log
+      - name: Display push message
+        run: echo "🎉 Code has been successfully pushed to the repository from a Windows machine!"
